@@ -19,7 +19,7 @@ The design intentionally ships with **SVG/gradient placeholders** (zero borrowed
 
 | # | Image | Exact location | Current state | Suggested spec |
 |---|---|---|---|---|
-| 1 | **Hero product/hero image** | `.hero-stage-card` — `index.html:156` | `role="img" aria-label="Pharmaceutical formulation placeholder"`; an SVG capsule + vitals line inside `.hero-stage-icon` | Hero visual for the right stage column. ~600×600, soft-blue background, pharma theme (capsules/blister/tablet). Keep the floating badge chips overlaid. |
+| 1 | **Hero image** | `.hero-media-frame` — `index.html:155` | `role="img" aria-label="Facility or team photo placeholder"`; SVG photo icon + "Facility / team photo pending" | Hero visual for the right column of the full-bleed navy hero. ~420×525 (4:5), rounded panel, white photo frame over navy gradient. One floating stat badge (`8 Therapeutic Areas`) stays overlaid. |
 | 2 | **Company / facility image** (Who We Are) | `.split-media` — `index.html:307` | `aria-label="Placeholder for company image"`; SVG photo icon | Real company/facility or product photography. ~640×480 (4:3), rounded panel. |
 | 3 | **Quality image** (Quality & Compliance section) | `.split-media` — `index.html:541` | `aria-label="Placeholder for quality image"`; SVG photo icon | Lab/manufacturing/QC imagery. ~640×480 (4:3). |
 | 4 | **Testimonial avatars ×3** | `.testimonial-avatar` — `index.html:671` (P), `:685` (D), `:699` (F) | Letter-initial circles (`P` / `D` / `F`) | Client profile photos or monogram avatars. 48×48 circular crop. Optional — initials are acceptable. |

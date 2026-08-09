@@ -1,8 +1,8 @@
 /* ============================================================
    DESTINY LABORATORIES PRIVATE LIMITED — design system
    Redesigned in the style of the client reference (Diya-style
-   pharma-marketing homepage): full-width sections, split hero
-   with floating badge chips, marquee band, tile grids, icon
+   pharma-marketing homepage): full-width sections, full-bleed
+   navy hero with photo frame, tile grids, icon
    boxes, stat counters, carousels, accordion FAQ, 4-column
    footer, floating WhatsApp/Call widgets.
 
@@ -481,8 +481,8 @@ p {
 .hero {
   position: relative;
   overflow: hidden;
-  background: linear-gradient(165deg, #F7FAFD 0%, #EEF3F9 55%, #E9F0F7 100%);
-  color: var(--ink);
+  background: linear-gradient(150deg, var(--navy-800) 0%, var(--navy-900) 100%);
+  color: #fff;
   padding: 72px 0 0;
 }
 
@@ -494,7 +494,7 @@ p {
   width: 640px;
   height: 640px;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(30, 90, 168, 0.10) 0%, rgba(30, 90, 168, 0) 70%);
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.10) 0%, rgba(255, 255, 255, 0) 70%);
   pointer-events: none;
 }
 
@@ -506,7 +506,7 @@ p {
   width: 560px;
   height: 560px;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(180, 90, 50, 0.08) 0%, rgba(180, 90, 50, 0) 70%);
+  background: radial-gradient(circle, rgba(224, 168, 46, 0.10) 0%, rgba(224, 168, 46, 0) 70%);
   pointer-events: none;
 }
 
@@ -523,24 +523,8 @@ p {
   max-width: 640px;
 }
 
-.hero-eyebrow {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  padding: 7px 16px;
-  border-radius: var(--radius-pill);
-  background: rgba(30, 90, 168, 0.08);
-  border: 1px solid rgba(30, 90, 168, 0.18);
-  font-size: 12px;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: var(--navy-700);
-  font-weight: 700;
-  margin-bottom: 22px;
-}
-
 .hero h1 {
-  color: var(--navy-800);
+  color: #fff;
   font-size: clamp(36px, 5vw, 58px);
   font-weight: 700;
   letter-spacing: -0.03em;
@@ -549,7 +533,7 @@ p {
 }
 
 .hero-sub {
-  color: var(--slate-600);
+  color: rgba(255, 255, 255, 0.82);
   font-size: 17px;
   max-width: 54ch;
   margin-bottom: 30px;
@@ -561,50 +545,79 @@ p {
   gap: 12px;
 }
 
-.hero-stage {
+.hero-ctas .btn-primary {
+  background: #fff;
+  color: var(--navy-800);
+  box-shadow: var(--shadow-md);
+}
+
+.hero-ctas .btn-primary:hover {
+  background: var(--slate-100);
+  color: var(--navy-900);
+}
+
+.hero-ctas .btn-ghost {
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.45);
+}
+
+.hero-ctas .btn-ghost:hover {
+  background: rgba(255, 255, 255, 0.10);
+  border-color: #fff;
+}
+
+.hero-media {
   position: relative;
   display: grid;
   place-items: center;
   min-height: 480px;
 }
 
-.hero-stage-card {
+.hero-media-frame {
   position: relative;
   width: min(420px, 100%);
   aspect-ratio: 4 / 5;
   border-radius: 28px;
-  background: linear-gradient(150deg, var(--navy-700), var(--navy-900));
+  background: linear-gradient(150deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.04));
+  border: 1px solid rgba(255, 255, 255, 0.18);
   box-shadow: var(--shadow-lg);
   overflow: hidden;
   display: grid;
   place-items: center;
+  color: rgba(255, 255, 255, 0.92);
 }
 
-.hero-stage-card::before {
+.hero-media-frame::before {
   content: "";
   position: absolute;
   inset: 0;
   background:
     radial-gradient(circle at 20% 15%, rgba(255, 255, 255, 0.16), transparent 42%),
-    radial-gradient(circle at 80% 85%, rgba(92, 147, 208, 0.35), transparent 55%),
-    linear-gradient(160deg, transparent 30%, rgba(0, 0, 0, 0.14));
+    radial-gradient(circle at 80% 85%, rgba(92, 147, 208, 0.35), transparent 55%);
 }
 
-.hero-stage-icon {
+.hero-media-frame svg {
   position: relative;
-  width: 140px;
-  height: 140px;
-  color: rgba(255, 255, 255, 0.92);
-  filter: drop-shadow(0 10px 24px rgba(0, 0, 0, 0.28));
+  width: 64px;
+  height: 64px;
+  stroke: currentColor;
+  opacity: 0.85;
 }
 
-.hero-stage-icon svg {
-  width: 100%;
-  height: 100%;
+.hero-media-frame span {
+  position: relative;
+  display: block;
+  margin-top: 14px;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.7);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 
-.badge-chip {
+.hero-media-badge {
   position: absolute;
+  bottom: 6%;
+  left: 2%;
   display: flex;
   align-items: center;
   gap: 10px;
@@ -613,16 +626,15 @@ p {
   background: #fff;
   box-shadow: var(--shadow-lg);
   border: 1px solid var(--slate-100);
-  animation: chip-float 5s ease-in-out infinite;
 }
 
-.badge-chip svg {
+.hero-media-badge svg {
   width: 26px;
   height: 26px;
   flex: none;
 }
 
-.badge-chip .chip-kicker {
+.hero-media-badge .chip-kicker {
   font-size: 10.5px;
   font-weight: 700;
   letter-spacing: 0.1em;
@@ -631,21 +643,12 @@ p {
   display: block;
 }
 
-.badge-chip .chip-value {
+.hero-media-badge .chip-value {
   font-size: 14px;
   font-weight: 700;
   color: var(--navy-900);
   display: block;
   line-height: 1.25;
-}
-
-.badge-chip--rating { top: 8%; left: -8%; }
-.badge-chip--gmp   { bottom: 22%; left: -14%; animation-delay: -1.6s; }
-.badge-chip--trust { bottom: -4%; right: 2%; animation-delay: -3.2s; }
-
-@keyframes chip-float {
-  0%, 100% { transform: translateY(0); }
-  50%      { transform: translateY(-10px); }
 }
 
 .hero-trust {
@@ -701,14 +704,14 @@ p {
     padding-bottom: 56px;
   }
 
-  .hero-stage {
+  .hero-media {
     min-height: 0;
     padding: 16px 0 0;
   }
 
-  .badge-chip--rating { left: 0; }
-  .badge-chip--gmp   { left: -4%; }
-  .badge-chip--trust { right: 0; }
+  .hero-media-badge {
+    left: 4%;
+  }
 }
 
 @media (max-width: 768px) {
@@ -721,54 +724,6 @@ p {
   .hero { padding-top: 48px; }
   .hero-ctas .btn { width: 100%; }
   .hero-trust-grid { grid-template-columns: 1fr; }
-}
-
-/* ---------- Marquee band ---------- */
-
-.marquee {
-  position: relative;
-  overflow: hidden;
-  background: var(--navy-900);
-  color: rgba(255, 255, 255, 0.85);
-  padding: 16px 0;
-  white-space: nowrap;
-}
-
-.marquee-track {
-  display: inline-flex;
-  gap: 40px;
-  padding-left: 40px;
-  animation: marquee 30s linear infinite;
-  will-change: transform;
-}
-
-.marquee-track span {
-  font-size: 14px;
-  font-weight: 600;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  display: inline-flex;
-  align-items: center;
-  gap: 40px;
-}
-
-.marquee-track span::after {
-  content: "";
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
-  background: var(--gold);
-  flex: none;
-}
-
-@keyframes marquee {
-  to { transform: translateX(-50%); }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .marquee-track {
-    animation: none;
-  }
 }
 
 /* ---------- Trust strip (home, below hero) ---------- */
@@ -2375,11 +2330,6 @@ p {
     transition: none;
   }
 
-  .badge-chip {
-    animation: none;
-  }
-
-  .hero-card,
   .cat-card,
   .tile-card,
   .product-card,
