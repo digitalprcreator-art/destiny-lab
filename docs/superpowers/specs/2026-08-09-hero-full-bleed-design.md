@@ -34,8 +34,10 @@ This change is limited to the homepage (`index.html`) hero and its styles.
 - `.hero` becomes **full-bleed**: deep navy gradient edge-to-edge
   (`linear-gradient(150deg, var(--navy-800), var(--navy-900))`), white text on
   the left, soft white glow accents.
-- Left column keeps: eyebrow chip (restyled for dark bg), H1 (white), supporting
-  paragraph (light slate), and the 2 CTAs (primary + ghost restyled for dark bg).
+- Left column: H1 (white), supporting paragraph (light slate), and the 2 CTAs
+  (primary + ghost restyled for dark bg). The "Pharmaceutical Manufacturing ·
+  Dehradun, Uttarakhand" eyebrow chip is **removed** — it is not in the reference
+  hero and its ECG-line icon reads as distracting.
 - Right column becomes a **photo frame**: rounded navy-toned card with a
   "Facility / team photo pending" placeholder (icon + label), consistent with the
   About section's placeholder treatment. No fake product graphic.
@@ -62,6 +64,7 @@ This change is limited to the homepage (`index.html`) hero and its styles.
 
 - Hero spans the full viewport width edge-to-edge on all breakpoints.
 - No oval/capsule SVG graph or stat chips remain in the hero.
+- No eyebrow chip in the hero.
 - One floating stat badge remains over the photo frame.
 - Marquee band removed.
 - 4-stat trust strip still present and functional.
