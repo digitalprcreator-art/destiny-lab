@@ -1,6 +1,6 @@
 # Destiny Laboratories — SEO Engagement Status & Handoff
 
-Last updated: 2026-08-07 · Companion docs in `seo/` (SEO-STRATEGY, SITE-STRUCTURE, COMPETITOR-ANALYSIS, CONTENT-CALENDAR, IMPLEMENTATION-ROADMAP)
+Last updated: 2026-08-09 · Companion docs in `seo/` (SEO-STRATEGY, SITE-STRUCTURE, COMPETITOR-ANALYSIS, CONTENT-CALENDAR, IMPLEMENTATION-ROADMAP)
 
 This document records everything done on the site so far, every change made, what is still left, and what we need from the client to continue.
 
@@ -79,7 +79,18 @@ This document records everything done on the site so far, every change made, wha
 - **`contact.html`** — form wired: `data-wa-form`, required name/phone, "Send on WhatsApp" button + success note. Fake "Not live" removed.
 - **`distribution.html`** — form wired same way (partnership type + territory fields). Fake `[FAKE FORM]` note and "Not live" button removed.
 
-### 3.8 File hygiene / gotchas learned
+### 3.8 Design refresh (session 2026-08-09)
+- **`docs/superpowers/specs/2026-08-09-diya-redesign-design.md`** — design spec for the refresh.
+- **Google Fonts** wired on all 38 site pages: preconnect + `Inter` (400–700) / `Roboto Slab` (600–700), matching `--font-body` / `--font-display` in `assets/css/styles.css`.
+- Fixed a **duplicate `</main>`** bug on 19 product pages: the "Related products" section was rendered outside `</main>`; now every page has exactly one `<main>`/`</main>`.
+- Full restructure (header/footer, hero, sections, copy) applied across all core/hub/product/legal pages.
+
+### 3.9 Repository cleanup (session 2026-08-09)
+- **Deleted** (client-approved): `Destiney Lab va-2025.pdf`, `Home - Destiny laboratories.html` + `_files/`, `destinylaboratories.com.zip`, `destinylaboratories.com (1).zip`, `website refer/`. Repo now holds only the live site + docs.
+- **`IMAGE-REQUIREMENTS.md`** created — every image needed, exact page/line location, current placeholder state, suggested spec, and what's waiting on client (photos, certs, pack shots).
+- Design refresh confirmed by client via local preview; typography (Roboto Slab + Inter) accepted.
+
+### 3.10 File hygiene / gotchas learned
 - All HTML normalized to **UTF-8 no BOM, LF line endings** (was CRLF on products).
 - **PowerShell 5.1 gotcha:** BOM-less `.ps1` files are read as ANSI — non-ASCII literals (`—` `·` `©` `’`) corrupt parsing (byte 0x94 → `"`) or emit mojibake (`â€”`). All scripts are ASCII-only and emit entities (`&mdash;`, `&#183;`, `&copy;`, `&rsquo;`).
 - All scripts live in `C:\Users\MOTILAL PRASAD\AppData\Local\Temp\opencode\` — **move them into the repo** (e.g. `seo/scripts/`) for reproducibility.
