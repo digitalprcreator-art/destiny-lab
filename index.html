@@ -110,13 +110,32 @@
         </span>
       </a>
       <nav class="main-nav" id="main-nav" aria-label="Primary navigation">
-        <a href="index.html" class="is-active" aria-current="page">Home</a>
-        <a href="about.html">About</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="quality.html">Quality</a>
-        <a href="distribution.html">Partnerships</a>
-        <a href="contact.html">Contact</a>
-        <span class="nav-cta"><a class="btn btn-primary btn-sm" href="contact.html">Get in Touch</a></span>
+        <div class="toolbar-items">
+          <a href="index.html" class="toolbar-item is-active" aria-current="page">
+            <svg class="toolbar-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+            <span class="toolbar-label">Home</span>
+          </a>
+          <a href="about.html" class="toolbar-item">
+            <svg class="toolbar-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
+            <span class="toolbar-label">About</span>
+          </a>
+          <a href="portfolio.html" class="toolbar-item">
+            <svg class="toolbar-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+            <span class="toolbar-label">Portfolio</span>
+          </a>
+          <a href="distribution.html" class="toolbar-item">
+            <svg class="toolbar-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
+            <span class="toolbar-label">Partnerships</span>
+          </a>
+          <a href="contact.html" class="toolbar-item">
+            <svg class="toolbar-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.08 4.18 2 2 0 0 1 4.06 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <span class="toolbar-label">Contact</span>
+          </a>
+        </div>
+        <a class="toolbar-cta" href="contact.html">
+          <svg class="toolbar-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg>
+          <span>Get in Touch</span>
+        </a>
       </nav>
       <button class="nav-toggle" type="button" aria-label="Toggle menu" aria-expanded="false" aria-controls="main-nav">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
@@ -128,89 +147,130 @@
 
   <main>
 
-    <!-- ================= Hero (full-bleed navy + photo frame) ================= -->
+    <!-- ================= 1. HERO (1280px max-width, 52/48 split, 750-850px min height) ================= -->
     <section class="hero">
-      <div class="container">
+      <div class="container-hero">
         <div class="hero-inner">
-          <div class="hero-head reveal">
-            <h1>Formulations that support health, at every stage of life.</h1>
+          <div class="hero-head">
+            <div class="hero-brand-kicker">
+              <span class="reveal-line"><span class="reveal-inner">DESTINY LABORATORIES · PHARMACEUTICAL FORMULATIONS</span></span>
+            </div>
+            <h1>
+              <span class="reveal-line"><span class="reveal-inner">Formulations that</span></span>
+              <span class="reveal-line"><span class="reveal-inner">support health, at</span></span>
+              <span class="reveal-line"><span class="reveal-inner">every stage of life.</span></span>
+            </h1>
             <p class="hero-sub">
-              Destiny Laboratories Private Limited markets a comprehensive range of pharmaceutical formulations spanning women's health, bone and joint care, neurology, gastroenterology, anti-infectives, and advanced nutrition across diverse dosage forms like tablets, softgel capsules, syrups, sachets, injections, and protein powders. To complement its core portfolio and address evolving wellness trends, the company is currently in the strategic planning phase to expand its footprint into the nutraceutical sector, with a dedicated launch of specialized dietary and wellness supplements currently under development.
+              Destiny Laboratories develops pharmaceutical formulations across diverse therapeutic areas and dosage forms, supporting evolving healthcare needs with a focus on quality and reliability.
             </p>
             <div class="hero-ctas">
-              <a class="btn btn-primary" href="portfolio.html">Explore Portfolio</a>
-              <a class="btn btn-ghost" href="tel:+919386354555">+91 93863 54555</a>
+              <a class="btn btn-primary" href="portfolio.html">Explore Portfolio &rarr;</a>
+              <a class="btn btn-ghost" href="distribution.html">Partner With Us</a>
             </div>
           </div>
 
-          <div class="hero-media reveal" style="--reveal-delay:120ms">
-            <div class="hero-media-frame" role="img" aria-label="Facility or team photo placeholder">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <rect x="3" y="3" width="18" height="18" rx="2"/>
-                <circle cx="9" cy="9" r="2"/>
-                <path d="m21 15-3.1-3.1a2 2 0 0 0-2.8 0L6 21"/>
-              </svg>
-              <span>Facility / team photo pending</span>
-            </div>
+          <div class="hero-media-frame">
+            <div class="hero-visual-card">
+              <!-- Laboratory / Molecular Scientific Illustration -->
+              <svg class="hero-visual-svg" viewBox="0 0 280 240" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Pharmaceutical laboratory scientific formulation illustration">
+                <!-- Distillation Flask & Chemistry Graphic -->
+                <circle cx="140" cy="130" r="70" stroke="rgba(255,255,255,0.15)" stroke-width="1.5" stroke-dasharray="4 4"/>
+                <circle cx="140" cy="130" r="95" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+                
+                <!-- Center Molecular Flask -->
+                <path d="M125 40v38l-40 68a24 24 0 0 0 21 34h68a24 24 0 0 0 21-34l-40-68V40" stroke="#5C93D0" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                <line x1="118" y1="40" x2="162" y2="40" stroke="#5C93D0" stroke-width="3" stroke-linecap="round"/>
+                
+                <!-- Fluid & Bubbles inside Flask -->
+                <path d="M96 150c12-8 30-4 44 2s32 4 44-2" stroke="#1AA6A6" stroke-width="2.5" stroke-linecap="round"/>
+                <circle cx="120" cy="162" r="4" fill="#E0A82E" fill-opacity="0.8"/>
+                <circle cx="148" cy="156" r="6" fill="#1AA6A6" fill-opacity="0.8"/>
+                <circle cx="160" cy="168" r="3" fill="#5C93D0" fill-opacity="0.8"/>
 
-            <span class="hero-media-badge">
-              <svg viewBox="0 0 24 24" fill="none" stroke="#E0A82E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <path d="M12 2 15 8.5 22 9.3l-5 4.9 1.2 6.9L12 17.8 5.8 21l1.2-6.9-5-4.9 7-.8L12 2z"/>
+                <!-- Molecular Nodes around -->
+                <circle cx="48" cy="70" r="10" fill="#123054" stroke="#5C93D0" stroke-width="2"/>
+                <circle cx="85" cy="45" r="7" fill="#123054" stroke="#E0A82E" stroke-width="2"/>
+                <line x1="48" y1="70" x2="85" y2="45" stroke="rgba(255,255,255,0.25)" stroke-width="1.5"/>
+
+                <circle cx="230" cy="80" r="11" fill="#123054" stroke="#1AA6A6" stroke-width="2"/>
+                <circle cx="200" cy="45" r="7" fill="#123054" stroke="#5C93D0" stroke-width="2"/>
+                <line x1="230" y1="80" x2="200" y2="45" stroke="rgba(255,255,255,0.25)" stroke-width="1.5"/>
+
+                <!-- Medical Cross Accent -->
+                <path d="M230 160v16M222 168h16" stroke="#E0A82E" stroke-width="2" stroke-linecap="round"/>
+                <path d="M50 150v14M43 157h14" stroke="#1AA6A6" stroke-width="2" stroke-linecap="round"/>
               </svg>
-              <span>
-                <span class="chip-kicker">Therapeutic Areas</span>
-                <span class="chip-value">8 Categories</span>
-              </span>
-            </span>
+
+              <!-- Floating Glass Badge -->
+              <div class="hero-badge-floating">
+                <span class="badge-text">
+                  <span class="badge-dot"></span>
+                  QUALITY. PRECISION. CONSISTENCY.
+                </span>
+                <span class="badge-tag">Pharma Grade</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
 
-      <!-- Trust grid below hero -->
-      <div class="hero-trust">
-        <div class="container">
+      <!-- Hero Stats Bar — Full Width of Hero Container -->
+      <div class="hero-trust hero-stats-bar">
+        <div class="container-hero">
           <div class="hero-trust-grid">
-            <div class="hero-trust-item reveal">
-              <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
-                <circle cx="9" cy="7" r="4"/>
-                <path d="M22 21v-2a4 4 0 0 0-3-3.87"/>
-                <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
-              </svg>
+            <div class="hero-trust-item hero-stat">
+              <div class="hero-trust-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
+                  <circle cx="9" cy="7" r="4"/>
+                  <path d="M22 21v-2a4 4 0 0 0-3-3.87"/>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                </svg>
+              </div>
               <div>
-                <span class="hero-trust-value">21</span>
+                <span class="hero-trust-value">21+</span>
                 <span class="hero-trust-label">Products in portfolio</span>
               </div>
             </div>
-            <div class="hero-trust-item reveal" style="--reveal-delay:60ms">
-              <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <rect x="3" y="3" width="7" height="7" rx="1"/>
-                <rect x="14" y="3" width="7" height="7" rx="1"/>
-                <rect x="14" y="14" width="7" height="7" rx="1"/>
-                <rect x="3" y="14" width="7" height="7" rx="1"/>
-              </svg>
+
+            <div class="hero-trust-item hero-stat">
+              <div class="hero-trust-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <rect x="3" y="3" width="7" height="7" rx="1.5"/>
+                  <rect x="14" y="3" width="7" height="7" rx="1.5"/>
+                  <rect x="14" y="14" width="7" height="7" rx="1.5"/>
+                  <rect x="3" y="14" width="7" height="7" rx="1.5"/>
+                </svg>
+              </div>
               <div>
                 <span class="hero-trust-value">8</span>
                 <span class="hero-trust-label">Therapeutic areas</span>
               </div>
             </div>
-            <div class="hero-trust-item reveal" style="--reveal-delay:120ms">
-              <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
-                <path d="M12 12V4M8 8h8"/>
-              </svg>
+
+            <div class="hero-trust-item hero-stat">
+              <div class="hero-trust-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                  <path d="M12 12V4M8 8h8"/>
+                </svg>
+              </div>
               <div>
                 <span class="hero-trust-value">7</span>
                 <span class="hero-trust-label">Dosage forms</span>
               </div>
             </div>
-            <div class="hero-trust-item reveal" style="--reveal-delay:180ms">
-              <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <path d="M12 22s8-3.5 8-9V5l-8-3-8 3v8c0 5.5 8 9 8 9z"/>
-              </svg>
+
+            <div class="hero-trust-item hero-stat">
+              <div class="hero-trust-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M12 22s8-3.5 8-9V5l-8-3-8 3v8c0 5.5 8 9 8 9z"/>
+                  <path d="m9 12 2 2 4-4"/>
+                </svg>
+              </div>
               <div>
-                <span class="hero-trust-value" style="color:var(--pending-text)">[To confirm]</span>
-                <span class="hero-trust-label">Regulatory certifications</span>
+                <span class="hero-trust-value">QUALITY</span>
+                <span class="hero-trust-label">Defined standards</span>
               </div>
             </div>
           </div>
@@ -218,565 +278,638 @@
       </div>
     </section>
 
-    <!-- ================= Who We Are ================= -->
+    <!-- ================= 2. ABOUT DESTINY (60/40 Split Layout) ================= -->
     <section class="section" id="about">
       <div class="container">
-        <div class="split">
-          <div class="split-copy reveal">
+        <div class="about-split">
+          <div class="about-copy reveal">
             <span class="eyebrow">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                 <path d="M2 12h4l2-5 3 10 2-7 2 4h7"/>
               </svg>
-              Who We Are
+              About Destiny
             </span>
-            <h2>Pharmaceutical formulations, marketed with care.</h2>
-            <p>
-              Destiny Laboratories Private Limited develops and markets pharmaceutical and
-              nutraceutical formulations, with a specialised portfolio spanning women's and
-              maternal health, bone and joint care, neurology and cognition, gastroenterology,
-              anti-infective therapy and everyday nutrition.
+            <h2>Pharmaceutical expertise, built around real healthcare needs.</h2>
+            <p class="about-lead">
+              Destiny Laboratories markets pharmaceutical formulations across key therapeutic categories, combining formulation consistency with nationwide partner distribution.
             </p>
             <p>
-              Every formulation in the range is documented on this site with its composition
-              and indication details, drawn from the company's own product catalogue.
+              From specialized maternal and hormonal therapies to neurology, gastroenterology and clinical nutrition, every product in the portfolio is backed by published composition data and reliable supply frameworks.
             </p>
-            <ul class="check-list">
-              <li>21 formulations across 8 therapeutic areas</li>
-              <li>Tablets, capsules, syrups, sachets, injection and protein powder</li>
-              <li>Registered at Central Hope Town, Vikas Nagar, Dehradun</li>
+            <ul class="feature-checklist">
+              <li>
+                <span class="feature-checklist-icon">&check;</span>
+                21+ formulations across 8 clinical categories
+              </li>
+              <li>
+                <span class="feature-checklist-icon">&check;</span>
+                Multiple dosage forms: tablets, softgels, syrups, sachets &amp; injectables
+              </li>
+              <li>
+                <span class="feature-checklist-icon">&check;</span>
+                Growing portfolio with active PCD franchise opportunities
+              </li>
             </ul>
-            <p style="margin-top:24px">
-              <a class="btn btn-primary" href="about.html">More About Us</a>
-            </p>
+            <a class="btn btn-primary" href="about.html">Learn About Us &rarr;</a>
           </div>
-          <div class="split-media reveal" role="img" aria-label="Placeholder for company image">
-            <div>
-              <svg viewBox="0 0 24 24" fill="none" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <rect x="3" y="3" width="18" height="18" rx="2"/>
-                <circle cx="9" cy="9" r="2"/>
-                <path d="m21 15-3.1-3.1a2 2 0 0 0-2.8 0L6 21"/>
-              </svg>
-              <span>Facility / team photo pending</span>
-            </div>
+
+          <div class="about-visual reveal" style="--reveal-delay:120ms">
+            <svg class="about-visual-svg" viewBox="0 0 260 220" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Destiny formulation development illustration">
+              <!-- Laboratory Distillation & Molecule Visual -->
+              <rect x="30" y="40" width="200" height="140" rx="16" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.15)" stroke-width="1.5"/>
+              
+              <!-- Tablet Blister Row Simulation -->
+              <rect x="50" y="60" width="34" height="48" rx="8" fill="rgba(92,147,208,0.2)" stroke="#5C93D0" stroke-width="1.5"/>
+              <circle cx="67" cy="84" r="9" fill="#fff" fill-opacity="0.85"/>
+              
+              <rect x="94" y="60" width="34" height="48" rx="8" fill="rgba(224,168,46,0.2)" stroke="#E0A82E" stroke-width="1.5"/>
+              <circle cx="111" cy="84" r="9" fill="#E0A82E" fill-opacity="0.85"/>
+
+              <rect x="138" y="60" width="34" height="48" rx="8" fill="rgba(26,166,166,0.2)" stroke="#1AA6A6" stroke-width="1.5"/>
+              <circle cx="155" cy="84" r="9" fill="#1AA6A6" fill-opacity="0.85"/>
+
+              <rect x="182" y="60" width="34" height="48" rx="8" fill="rgba(180,90,50,0.2)" stroke="#B45A32" stroke-width="1.5"/>
+              <circle cx="199" cy="84" r="9" fill="#B45A32" fill-opacity="0.85"/>
+
+              <!-- Metric Line Graph inside -->
+              <path d="M50 145l35-20 40 15 45-30 40 10" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="170" cy="110" r="4" fill="#20DF7F"/>
+            </svg>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ================= Therapeutic range tiles ================= -->
+    <!-- ================= 3. THERAPEUTIC AREAS (2x4 Feature Section, 220px Cards) ================= -->
     <section class="section section-alt" id="areas">
       <div class="container">
-        <div class="section-head center reveal">
-          <span class="eyebrow">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <div class="section-head center">
+          <span class="eyebrow reveal" data-reveal="eyebrow">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
               <path d="M2 12h4l2-5 3 10 2-7 2 4h7"/>
             </svg>
-            Product Range
+            Our Portfolio
           </span>
-          <h2>Eight therapeutic areas, one quality standard</h2>
-          <p>The portfolio spans women's health and maternal care, bone and joint health, neurology and cognition, men's health, gastroenterology, anti-infective therapy, steroidal treatment and everyday nutrition.</p>
+          <h2 class="reveal" data-reveal="heading">Eight therapeutic areas. One quality standard.</h2>
+          <p class="reveal" data-reveal="description">Explore our specialized range designed to support patient wellness across key healthcare stages.</p>
         </div>
 
-        <div class="tile-grid">
-          <a class="tile-card reveal" href="products-gynaecology-maternal-health.html">
-            <span class="tile-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <path d="M12 20.8C7.2 17 4 13.6 4 9.9 4 7.2 6 5.3 8.4 5.3c1.6 0 3 .8 3.6 2.1.6-1.3 2-2.1 3.6-2.1C18 5.3 20 7.2 20 9.9c0 3.7-3.2 7.1-8 10.9z"/>
-              </svg>
-            </span>
-            <h3>Gynaecology &amp; Maternal Health</h3>
-            <span class="tile-count">6 products</span>
+        <div class="portfolio-feature-grid">
+          <!-- 01 -->
+          <a class="portfolio-feature-card area-card reveal" data-reveal="card-1" href="products-gynaecology-maternal-health.html">
+            <div class="pcard-top">
+              <span class="pcard-num">01</span>
+              <span class="pcard-icon-pill">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 20.8C7.2 17 4 13.6 4 9.9 4 7.2 6 5.3 8.4 5.3c1.6 0 3 .8 3.6 2.1.6-1.3 2-2.1 3.6-2.1C18 5.3 20 7.2 20 9.9c0 3.7-3.2 7.1-8 10.9z"/>
+                </svg>
+              </span>
+            </div>
+            <div class="pcard-bottom">
+              <div class="pcard-title">Women's &amp; Maternal Health</div>
+              <div class="pcard-count">6 formulations &rarr;</div>
+            </div>
           </a>
-          <a class="tile-card reveal" style="--reveal-delay:40ms" href="products-bone-joint-health.html">
-            <span class="tile-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <path d="M17 10c.7-.7 1.7 0 2.5 0a2.5 2.5 0 1 0 0-5 .5.5 0 0 1-.5-.5 2.5 2.5 0 1 0-5 0c0 .81.7 1.8 0 2.5l-7 7c-.7.7-1.7 0-2.5 0a2.5 2.5 0 0 0 0 5c.28 0 .5.22.5.5a2.5 2.5 0 1 0 5 0c0-.81-.7-1.8 0-2.5z"/>
-              </svg>
-            </span>
-            <h3>Bone &amp; Joint Health</h3>
-            <span class="tile-count">3 products</span>
+
+          <!-- 02 -->
+          <a class="portfolio-feature-card reveal" style="--reveal-delay:40ms" href="products-bone-joint-health.html">
+            <div class="pcard-top">
+              <span class="pcard-num">02</span>
+              <span class="pcard-icon-pill">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M17 10c.7-.7 1.7 0 2.5 0a2.5 2.5 0 1 0 0-5 .5.5 0 0 1-.5-.5 2.5 2.5 0 1 0-5 0c0 .81.7 1.8 0 2.5l-7 7c-.7.7-1.7 0-2.5 0a2.5 2.5 0 0 0 0 5c.28 0 .5.22.5.5a2.5 2.5 0 1 0 5 0c0-.81-.7-1.8 0-2.5z"/>
+                </svg>
+              </span>
+            </div>
+            <div class="pcard-bottom">
+              <div class="pcard-title">Bone &amp; Joint Health</div>
+              <div class="pcard-count">3 formulations &rarr;</div>
+            </div>
           </a>
-          <a class="tile-card reveal" style="--reveal-delay:80ms" href="products-neurology-cognition.html">
-            <span class="tile-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/>
-              </svg>
-            </span>
-            <h3>Neurology &amp; Cognition</h3>
-            <span class="tile-count">3 products</span>
+
+          <!-- 03 -->
+          <a class="portfolio-feature-card reveal" style="--reveal-delay:80ms" href="products-neurology-cognition.html">
+            <div class="pcard-top">
+              <span class="pcard-num">03</span>
+              <span class="pcard-icon-pill">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/>
+                </svg>
+              </span>
+            </div>
+            <div class="pcard-bottom">
+              <div class="pcard-title">Neurology &amp; Cognition</div>
+              <div class="pcard-count">3 formulations &rarr;</div>
+            </div>
           </a>
-          <a class="tile-card reveal" style="--reveal-delay:120ms" href="products-mens-health.html">
-            <span class="tile-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <path d="M12 22s8-3.5 8-9V5l-8-3-8 3v8c0 5.5 8 9 8 9z"/>
-                <path d="M12 8v8M8 12h8"/>
-              </svg>
-            </span>
-            <h3>Men's Health</h3>
-            <span class="tile-count">1 product</span>
+
+          <!-- 04 -->
+          <a class="portfolio-feature-card reveal" style="--reveal-delay:120ms" href="products-mens-health.html">
+            <div class="pcard-top">
+              <span class="pcard-num">04</span>
+              <span class="pcard-icon-pill">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 22s8-3.5 8-9V5l-8-3-8 3v8c0 5.5 8 9 8 9z"/>
+                  <path d="M12 8v8M8 12h8"/>
+                </svg>
+              </span>
+            </div>
+            <div class="pcard-bottom">
+              <div class="pcard-title">Men's Health</div>
+              <div class="pcard-count">1 formulation &rarr;</div>
+            </div>
           </a>
-          <a class="tile-card reveal" href="products-gastroenterology.html">
-            <span class="tile-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.5 19 2c1 2 2 4.2 2 8 0 5.5-4.8 10-10 10z"/>
-                <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/>
-              </svg>
-            </span>
-            <h3>Gastroenterology</h3>
-            <span class="tile-count">2 products</span>
+
+          <!-- 05 -->
+          <a class="portfolio-feature-card reveal" href="products-gastroenterology.html">
+            <div class="pcard-top">
+              <span class="pcard-num">05</span>
+              <span class="pcard-icon-pill">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.5 19 2c1 2 2 4.2 2 8 0 5.5-4.8 10-10 10z"/>
+                  <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/>
+                </svg>
+              </span>
+            </div>
+            <div class="pcard-bottom">
+              <div class="pcard-title">Gastroenterology</div>
+              <div class="pcard-count">2 formulations &rarr;</div>
+            </div>
           </a>
-          <a class="tile-card reveal" style="--reveal-delay:40ms" href="products-anti-infective.html">
-            <span class="tile-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <path d="M10 2v7L4.5 18.5A2 2 0 0 0 6.2 21h11.6a2 2 0 0 0 1.7-2.5L14 9V2"/>
-                <path d="M8.5 2h7"/>
-                <path d="M7 15h10"/>
-              </svg>
-            </span>
-            <h3>Anti-Infective</h3>
-            <span class="tile-count">2 products</span>
+
+          <!-- 06 -->
+          <a class="portfolio-feature-card reveal" style="--reveal-delay:40ms" href="products-anti-infective.html">
+            <div class="pcard-top">
+              <span class="pcard-num">06</span>
+              <span class="pcard-icon-pill">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M10 2v7L4.5 18.5A2 2 0 0 0 6.2 21h11.6a2 2 0 0 0 1.7-2.5L14 9V2"/>
+                  <path d="M8.5 2h7"/>
+                  <path d="M7 15h10"/>
+                </svg>
+              </span>
+            </div>
+            <div class="pcard-bottom">
+              <div class="pcard-title">Anti-Infective</div>
+              <div class="pcard-count">2 formulations &rarr;</div>
+            </div>
           </a>
-          <a class="tile-card reveal" style="--reveal-delay:80ms" href="products-steroidal-anti-inflammatory.html">
-            <span class="tile-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <path d="M12 2.7s6.5 6.7 6.5 11a6.5 6.5 0 0 1-13 0C5.5 9.4 12 2.7 12 2.7z"/>
-              </svg>
-            </span>
-            <h3>Steroidal &amp; Anti-Inflammatory</h3>
-            <span class="tile-count">1 product</span>
+
+          <!-- 07 -->
+          <a class="portfolio-feature-card reveal" style="--reveal-delay:80ms" href="products-steroidal-anti-inflammatory.html">
+            <div class="pcard-top">
+              <span class="pcard-num">07</span>
+              <span class="pcard-icon-pill">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 2.7s6.5 6.7 6.5 11a6.5 6.5 0 0 1-13 0C5.5 9.4 12 2.7 12 2.7z"/>
+                </svg>
+              </span>
+            </div>
+            <div class="pcard-bottom">
+              <div class="pcard-title">Steroidal &amp; Pain Relief</div>
+              <div class="pcard-count">1 formulation &rarr;</div>
+            </div>
           </a>
-          <a class="tile-card reveal" style="--reveal-delay:120ms" href="products-nutrition-wellness.html">
-            <span class="tile-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <circle cx="12" cy="12" r="4"/>
-                <path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/>
-              </svg>
-            </span>
-            <h3>Nutrition &amp; Wellness</h3>
-            <span class="tile-count">3 products</span>
+
+          <!-- 08 -->
+          <a class="portfolio-feature-card reveal" style="--reveal-delay:120ms" href="products-nutrition-wellness.html">
+            <div class="pcard-top">
+              <span class="pcard-num">08</span>
+              <span class="pcard-icon-pill">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="4"/>
+                  <path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/>
+                </svg>
+              </span>
+            </div>
+            <div class="pcard-bottom">
+              <div class="pcard-title">Nutrition &amp; Wellness</div>
+              <div class="pcard-count">3 formulations &rarr;</div>
+            </div>
           </a>
         </div>
 
-        <div class="section-head center" style="margin:44px 0 0">
-          <a class="btn btn-primary" href="portfolio.html">View Full Portfolio</a>
+        <div class="section-head center" style="margin:48px 0 0">
+          <a class="btn btn-primary" href="portfolio.html">View Full Portfolio &rarr;</a>
         </div>
       </div>
     </section>
 
-    <!-- ================= Partnership CTA band ================= -->
-    <section class="section section-tight">
+    <!-- ================= 4. FULL-WIDTH PARTNERSHIP CTA (450-550px Dark Navy Break) ================= -->
+    <section class="fullwidth-cta">
       <div class="container">
-        <div class="cta-banner reveal">
-          <div>
-            <h2>Building strong healthcare partnerships across India</h2>
-            <p>Destiny Laboratories is opening partnership conversations across India — PCD franchise and distribution of our pharmaceutical portfolio. Write to us with your requirements.</p>
-          </div>
-          <a class="btn btn-light" href="distribution.html">Explore Partnership Opportunities</a>
+        <div class="fullwidth-cta-inner reveal">
+          <span class="eyebrow eyebrow-light">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M2 12h4l2-5 3 10 2-7 2 4h7"/>
+            </svg>
+            Build with Destiny
+          </span>
+          <h2>Building strong healthcare partnerships across India.</h2>
+          <p>
+            Partner with Destiny Laboratories for PCD franchise opportunities and distribution partnerships with territory backing and dependable product supplies.
+          </p>
+          <a class="btn btn-primary" href="distribution.html">Explore Partnership Opportunities &rarr;</a>
         </div>
       </div>
     </section>
 
-    <!-- ================= Vision, Mission & Values ================= -->
+    <!-- ================= 5. VISION / MISSION / VALUES (Editorial Bordered Layout) ================= -->
     <section class="section" id="vmv">
       <div class="container">
         <div class="section-head center reveal">
           <span class="eyebrow">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
               <path d="M2 12h4l2-5 3 10 2-7 2 4h7"/>
             </svg>
-            Purpose
+            Our Foundation
           </span>
-          <h2>Our vision, mission &amp; values</h2>
-          <p>What guides the company's work every day. These statements are being reviewed by the company before publication.</p>
+          <h2>Principles that guide our formulations and partnerships</h2>
+          <p>Every decision at Destiny Laboratories is anchored in clinical relevance, product integrity, and sustainable growth.</p>
         </div>
-        <div class="vmv-grid">
-          <div class="vmv-card reveal">
-            <span class="vmv-num">01 · Vision</span>
-            <h3>Health support at every stage of life</h3>
-            <p>Dependable pharmaceutical and nutraceutical formulations that help people stay well, from maternal care to everyday nutrition.</p>
+
+        <div class="foundation-grid reveal">
+          <!-- 01 VISION -->
+          <div class="foundation-col">
+            <div>
+              <span class="foundation-num">01</span>
+              <div class="foundation-title">Vision</div>
+              <div class="foundation-lead">Health support at every stage of life.</div>
+            </div>
+            <p class="foundation-text">
+              Dependable pharmaceutical and nutraceutical formulations that help people stay well, from maternal care to everyday nutrition.
+            </p>
           </div>
-          <div class="vmv-card reveal" style="--reveal-delay:60ms">
-            <span class="vmv-num">02 · Mission</span>
-            <h3>Formulations built around real needs</h3>
-            <p>Develop and market quality formulations across women's health, bone and joint care, neurology, gastro, anti-infective and nutrition.</p>
+
+          <!-- 02 MISSION -->
+          <div class="foundation-col">
+            <div>
+              <span class="foundation-num">02</span>
+              <div class="foundation-title">Mission</div>
+              <div class="foundation-lead">Build sustainable healthcare partnerships.</div>
+            </div>
+            <p class="foundation-text">
+              Develop and market quality formulations across clinical categories with complete documentation and partner support.
+            </p>
           </div>
-          <div class="vmv-card reveal" style="--reveal-delay:120ms">
-            <span class="vmv-num">03 · Values</span>
-            <h3>Quality, care &amp; partnership</h3>
-            <p>Transparent product documentation, honest standards and dependable support for the healthcare partners we work with.</p>
+
+          <!-- 03 VALUES -->
+          <div class="foundation-col">
+            <div>
+              <span class="foundation-num">03</span>
+              <div class="foundation-title">Values</div>
+              <div class="foundation-lead">Integrity. Quality. Collaboration.</div>
+            </div>
+            <p class="foundation-text">
+              Transparent specifications, honest product details, and reliable commercial commitments for our distribution partners.
+            </p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ================= Our Services ================= -->
+    <!-- ================= 6. WAYS TO WORK WITH DESTINY (2x2 Large Grid) ================= -->
     <section class="section section-alt" id="services">
       <div class="container">
         <div class="section-head center reveal">
           <span class="eyebrow">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
               <path d="M2 12h4l2-5 3 10 2-7 2 4h7"/>
             </svg>
-            Our Services
+            Collaboration
           </span>
           <h2>Ways to work with Destiny Laboratories</h2>
-          <p>PCD franchise, distribution and partner support built around a documented pharmaceutical portfolio.</p>
+          <p>Structured PCD franchise and distribution models built around a documented pharmaceutical portfolio.</p>
         </div>
 
-        <div class="services-grid">
-          <div class="icon-box reveal">
-            <div class="icon-box-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <path d="M3 21h18"/>
-                <path d="M5 21V7l7-4 7 4v14"/>
-                <path d="M9 9h1M14 9h1M9 13h1M14 13h1"/>
-              </svg>
-            </div>
+        <div class="work-grid">
+          <!-- 01 PCD -->
+          <a class="work-card reveal" href="distribution.html">
             <div>
-              <h3>PCD franchise</h3>
-              <p>Partner with Destiny Laboratories to distribute the portfolio in your territory. Monopoly and territory terms are being finalised by the company.</p>
+              <div class="work-card-top">
+                <span class="work-card-num">01</span>
+                <span class="work-card-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M3 21h18M5 21V7l7-4 7 4v14M9 9h1M14 9h1M9 13h1M14 13h1"/>
+                  </svg>
+                </span>
+              </div>
+              <div class="work-card-title">PCD Franchise</div>
+              <p class="work-card-text">
+                Build your healthcare business with Destiny. Monopoly rights and commercial terms across target territories.
+              </p>
             </div>
-          </div>
-          <div class="icon-box reveal" style="--reveal-delay:60ms">
-            <div class="icon-box-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <path d="M3 3h18v18H3z"/>
-                <path d="M3 9h18M9 21V9"/>
-              </svg>
-            </div>
+            <span class="work-card-action">&rarr; Learn More</span>
+          </a>
+
+          <!-- 02 DISTRIBUTION -->
+          <a class="work-card reveal" style="--reveal-delay:60ms" href="distribution.html">
             <div>
-              <h3>Distribution</h3>
-              <p>Stock the portfolio across retail and institutional channels, backed by product documentation and marketing support where confirmed.</p>
+              <div class="work-card-top">
+                <span class="work-card-num">02</span>
+                <span class="work-card-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M3 3h18v18H3zM3 9h18M9 21V9"/>
+                  </svg>
+                </span>
+              </div>
+              <div class="work-card-title">Distribution</div>
+              <p class="work-card-text">
+                Expand access through our product portfolio across retail and institutional channels.
+              </p>
             </div>
-          </div>
-          <div class="icon-box reveal" style="--reveal-delay:120ms">
-            <div class="icon-box-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
-                <path d="M14 2v6h6"/>
-                <path d="M12 11v6M9 14h6"/>
-              </svg>
-            </div>
+            <span class="work-card-action">&rarr; Learn More</span>
+          </a>
+
+          <!-- 03 PARTNER SUPPORT -->
+          <a class="work-card reveal" style="--reveal-delay:120ms" href="distribution.html">
             <div>
-              <h3>Partner support</h3>
-              <p>Product sheets, visual aids, samples and market development support — the exact package is being defined by the company.</p>
+              <div class="work-card-top">
+                <span class="work-card-num">03</span>
+                <span class="work-card-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8zM14 2v6h6M12 11v6M9 14h6"/>
+                  </svg>
+                </span>
+              </div>
+              <div class="work-card-title">Partner Support</div>
+              <p class="work-card-text">
+                Comprehensive product documentation, promotional materials, and dedicated market support.
+              </p>
             </div>
-          </div>
-          <div class="icon-box reveal" style="--reveal-delay:180ms">
-            <div class="icon-box-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <path d="M12 2 2 7l10 5 10-5-10-5z"/>
-                <path d="M2 17l10 5 10-5"/>
-                <path d="M2 12l10 5 10-5"/>
-              </svg>
-            </div>
+            <span class="work-card-action">&rarr; Learn More</span>
+          </a>
+
+          <!-- 04 DOCUMENTED PORTFOLIO -->
+          <a class="work-card reveal" style="--reveal-delay:180ms" href="portfolio.html">
             <div>
-              <h3>Documented portfolio</h3>
-              <p>21 pharmaceutical formulations across 8 therapeutic areas, each with composition and indication details published on this site.</p>
+              <div class="work-card-top">
+                <span class="work-card-num">04</span>
+                <span class="work-card-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 2 2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                  </svg>
+                </span>
+              </div>
+              <div class="work-card-title">Documented Portfolio</div>
+              <p class="work-card-text">
+                21 pharmaceutical formulations across 8 therapeutic areas with complete clinical specifications.
+              </p>
             </div>
-          </div>
+            <span class="work-card-action">&rarr; Learn More</span>
+          </a>
         </div>
       </div>
     </section>
 
-    <!-- ================= Quality & Compliance ================= -->
+    <!-- ================= 7. QUALITY & COMPLIANCE (Editorial Split) ================= -->
     <section class="section" id="quality">
       <div class="container">
-        <div class="split">
-          <div class="split-media reveal" role="img" aria-label="Placeholder for quality image">
-            <div>
-              <svg viewBox="0 0 24 24" fill="none" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <path d="M12 22s8-3.5 8-9V5l-8-3-8 3v8c0 5.5 8 9 8 9z"/>
-                <path d="m9 12 2 2 4-4"/>
-              </svg>
-              <span>Quality &amp; certifications</span>
-            </div>
-          </div>
-          <div class="split-copy reveal">
+        <div class="quality-split">
+          <div class="quality-copy reveal">
             <span class="eyebrow">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                 <path d="M2 12h4l2-5 3 10 2-7 2 4h7"/>
               </svg>
               Quality &amp; Compliance
             </span>
-            <h2>No standard is claimed until it is verified.</h2>
+            <h2>Quality is not an afterthought.</h2>
             <p>
-              Certifications, manufacturing standards and quality-control processes are listed
-              on our quality page once confirmed by the company. Nothing is assumed or inferred.
+              Every product and partnership is approached with careful attention to documentation, consistency and applicable quality requirements.
             </p>
-            <ul class="check-list">
-              <li>Certifications shown only after company confirmation</li>
-              <li>No GMP or ISO claim stated until verified</li>
-              <li>Transparent manufacturing and quality-control process</li>
+            <ul class="feature-checklist">
+              <li>
+                <span class="feature-checklist-icon">&check;</span>
+                Transparent documentation &amp; verification
+              </li>
+              <li>
+                <span class="feature-checklist-icon">&check;</span>
+                Published product composition and batch integrity
+              </li>
+              <li>
+                <span class="feature-checklist-icon">&check;</span>
+                Continuous partnership compliance &amp; support
+              </li>
             </ul>
-            <p style="margin-top:24px">
-              <a class="btn btn-primary" href="quality.html">View Quality Page</a>
-            </p>
+            <a class="btn btn-primary" href="about.html">Learn More About Our Formulations &rarr;</a>
+          </div>
+
+          <div class="quality-visual reveal" style="--reveal-delay:120ms">
+            <svg class="quality-visual-svg" viewBox="0 0 240 200" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Quality and compliance validation illustration">
+              <circle cx="120" cy="100" r="75" fill="#fff" stroke="#5C93D0" stroke-width="2"/>
+              <path d="M120 45v110M65 100h110" stroke="#E2E8F0" stroke-width="1.5" stroke-dasharray="4 4"/>
+              <!-- Seal of Compliance -->
+              <path d="M120 60l14 28 31 4-22 22 5 31-28-15-28 15 5-31-22-22 31-4z" fill="#1E5AA8" fill-opacity="0.12" stroke="#1E5AA8" stroke-width="2"/>
+              <!-- Centered Checkmark -->
+              <path d="M106 100l10 10 20-20" stroke="#1E5AA8" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ================= Why Choose Us / counters ================= -->
+    <!-- ================= 8. WHY DESTINY — DATA SECTION (Huge Numbers) ================= -->
     <section class="section section-alt" id="why">
       <div class="container">
         <div class="section-head center reveal">
           <span class="eyebrow">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
               <path d="M2 12h4l2-5 3 10 2-7 2 4h7"/>
             </svg>
-            Why Choose Us
+            Why Destiny
           </span>
-          <h2>Why partner with Destiny Laboratories</h2>
-          <p>Confirmed strengths of the portfolio today; partner-specific terms are noted where they still need client confirmation.</p>
+          <h2>Proven portfolio depth and therapeutic focus</h2>
+          <p>Real formulation breadth and dedicated partner support driving dependable healthcare outcomes.</p>
         </div>
 
-        <div class="counter-grid">
-          <div class="counter-tile reveal">
-            <span class="counter-value"><span class="counter-num" data-count="21">0</span><span class="counter-suffix">+</span></span>
-            <p>Formulations in the portfolio</p>
+        <!-- Huge Data Counters -->
+        <div class="data-section-grid reveal">
+          <div class="data-stat-block">
+            <span class="data-stat-num"><span class="counter-num" data-count="21">0</span>+</span>
+            <span class="data-stat-label">Products in Portfolio</span>
           </div>
-          <div class="counter-tile reveal" style="--reveal-delay:60ms">
-            <span class="counter-value"><span class="counter-num" data-count="8">0</span></span>
-            <p>Therapeutic areas served</p>
+
+          <div class="data-stat-block">
+            <span class="data-stat-num"><span class="counter-num" data-count="8">0</span></span>
+            <span class="data-stat-label">Therapeutic Areas</span>
           </div>
-          <div class="counter-tile reveal" style="--reveal-delay:120ms">
-            <span class="counter-value"><span class="counter-num" data-count="7">0</span></span>
-            <p>Dosage forms available</p>
+
+          <div class="data-stat-block">
+            <span class="data-stat-num"><span class="counter-num" data-count="7">0</span></span>
+            <span class="data-stat-label">Dosage Forms</span>
           </div>
-          <div class="counter-tile reveal" style="--reveal-delay:180ms">
-            <span class="counter-value"><span class="counter-num" data-count="6">0</span></span>
-            <p>Products in women's health line</p>
+
+          <div class="data-stat-block">
+            <span class="data-stat-num"><span class="counter-num" data-count="6">0</span></span>
+            <span class="data-stat-label">Portfolio Benefits</span>
           </div>
         </div>
 
-        <div class="why-grid" style="margin-top:52px">
-          <div class="why-block reveal">
-            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
-              <circle cx="9" cy="7" r="4"/>
-              <path d="M22 21v-2a4 4 0 0 0-3-3.87"/>
-              <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
-            </svg>
-            <h3>Women's health focus</h3>
-            <p>A dedicated maternal and gynaecological line — progesterone, PCOS, iron, prenatal and lactation support — as well as male fertility care.</p>
+        <!-- 4 Key Pillars -->
+        <div class="data-features-grid">
+          <div class="data-feature-card reveal">
+            <h3>Women's Health Focus</h3>
+            <p>Dedicated line covering progesterone, PCOS management, prenatal vitamins, lactation support, and male fertility care.</p>
           </div>
-          <div class="why-block reveal" style="--reveal-delay:60ms">
-            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
-              <path d="M14 2v6h6"/>
-            </svg>
-            <h3>Range of dosage forms</h3>
-            <p>Tablets, softgel and hard capsules, syrups, sachets, injection and protein powder — meeting varied therapy and patient needs.</p>
+
+          <div class="data-feature-card reveal" style="--reveal-delay:60ms">
+            <h3>Range of Dosage Forms</h3>
+            <p>Tablets, softgel capsules, syrups, sachets, injections, and protein powders meeting varied clinical protocols.</p>
           </div>
-          <div class="why-block reveal" style="--reveal-delay:120ms">
-            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <path d="M12 22s8-3.5 8-9V5l-8-3-8 3v8c0 5.5 8 9 8 9z"/>
-              <path d="m9 12 2 2 4-4"/>
-            </svg>
-            <h3>Partner terms &amp; support</h3>
-            <p><span class="pending-tag" style="margin-bottom:8px">TO CONFIRM</span></p>
-            <p>Territory rights, minimum order values, samples and marketing support for franchise and distribution partners are being finalised by the company.</p>
+
+          <div class="data-feature-card reveal" style="--reveal-delay:120ms">
+            <h3>Partner Support</h3>
+            <p>Dedicated territory rights, visual aids, marketing materials, and dependable logistical backing across India.</p>
           </div>
-          <div class="why-block reveal" style="--reveal-delay:180ms">
-            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <path d="M3 3h18v18H3z"/>
-              <path d="M3 9h18M9 21V9"/>
-            </svg>
-            <h3>Portfolio breadth</h3>
-            <p>21 formulations across 8 therapeutic areas, with real depth in women's health, bone and joint care, and nutrition.</p>
+
+          <div class="data-feature-card reveal" style="--reveal-delay:180ms">
+            <h3>Portfolio Breadth</h3>
+            <p>21 formulations across 8 therapeutic areas, ensuring well-balanced coverage across acute and chronic healthcare indications.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ================= Latest Products ================= -->
+    <!-- ================= 9. LATEST PRODUCTS (Visual Product Cards & Carousel) ================= -->
     <section class="section section-alt" id="products">
       <div class="container">
         <div class="section-head center reveal">
           <span class="eyebrow">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
               <path d="M2 12h4l2-5 3 10 2-7 2 4h7"/>
             </svg>
             Our Range
           </span>
-          <h2>Latest products</h2>
+          <h2>Latest formulations</h2>
           <p>A snapshot of the portfolio across key therapeutic areas. Every product page carries full composition and indication details.</p>
         </div>
 
         <div class="carousel product-carousel" data-carousel>
           <div class="carousel-viewport">
             <div class="carousel-track">
+              <!-- Slide 1: Adwistone -->
               <div class="carousel-slide">
                 <article class="product-card">
-                  <span class="product-chip">Gynaecology</span>
-                  <h3><a href="product-adwistone.html">Adwistone 300 SR</a></h3>
-                  <p class="product-comp">Natural Micronised Progesterone, Sustained Release 300 mg Tablets</p>
-                  <a class="btn btn-ghost btn-sm" href="product-adwistone.html">View Details</a>
+                  <div class="product-card-visual">
+                    <svg viewBox="0 0 80 80" fill="none">
+                      <rect x="20" y="24" width="40" height="32" rx="6" fill="#fff" stroke="#1E5AA8" stroke-width="2"/>
+                      <circle cx="32" cy="40" r="5" fill="#1E5AA8"/>
+                      <circle cx="48" cy="40" r="5" fill="#1E5AA8"/>
+                    </svg>
+                  </div>
+                  <div class="product-card-body">
+                    <div class="product-card-header">
+                      <span class="product-chip">Gynaecology</span>
+                      <h3><a href="product-adwistone.html">Adwistone 300 SR</a></h3>
+                      <p class="product-comp">Natural Micronised Progesterone, Sustained Release 300 mg Tablets</p>
+                    </div>
+                    <a class="btn btn-primary btn-sm" href="product-adwistone.html">View Details &rarr;</a>
+                  </div>
                 </article>
               </div>
+
+              <!-- Slide 2: Arufem -->
               <div class="carousel-slide">
                 <article class="product-card">
-                  <span class="product-chip">Gynaecology</span>
-                  <h3><a href="product-arufem.html">Arufem</a></h3>
-                  <p class="product-comp">Evening Primrose Oil 1000 mg + Vitamin E Acetate 25 IU Softgels</p>
-                  <a class="btn btn-ghost btn-sm" href="product-arufem.html">View Details</a>
+                  <div class="product-card-visual">
+                    <svg viewBox="0 0 80 80" fill="none">
+                      <rect x="24" y="24" width="32" height="32" rx="16" fill="#fff" stroke="#E0A82E" stroke-width="2"/>
+                      <path d="M32 40c4-4 12-4 16 0" stroke="#E0A82E" stroke-width="2"/>
+                    </svg>
+                  </div>
+                  <div class="product-card-body">
+                    <div class="product-card-header">
+                      <span class="product-chip">Gynaecology</span>
+                      <h3><a href="product-arufem.html">Arufem</a></h3>
+                      <p class="product-comp">Evening Primrose Oil 1000 mg + Vitamin E Acetate 25 IU Softgels</p>
+                    </div>
+                    <a class="btn btn-primary btn-sm" href="product-arufem.html">View Details &rarr;</a>
+                  </div>
                 </article>
               </div>
+
+              <!-- Slide 3: Atharva -->
               <div class="carousel-slide">
                 <article class="product-card">
-                  <span class="product-chip">Gynaecology</span>
-                  <h3><a href="product-atharva.html">Atharva</a></h3>
-                  <p class="product-comp">Myo &amp; D-Chiro Inositol + Metformin + Mecobalamin + L-Methylfolate Tablets</p>
-                  <a class="btn btn-ghost btn-sm" href="product-atharva.html">View Details</a>
+                  <div class="product-card-visual">
+                    <svg viewBox="0 0 80 80" fill="none">
+                      <rect x="20" y="24" width="40" height="32" rx="6" fill="#fff" stroke="#1AA6A6" stroke-width="2"/>
+                      <line x1="20" y1="40" x2="60" y2="40" stroke="#1AA6A6" stroke-width="1.5"/>
+                    </svg>
+                  </div>
+                  <div class="product-card-body">
+                    <div class="product-card-header">
+                      <span class="product-chip">Gynaecology</span>
+                      <h3><a href="product-atharva.html">Atharva</a></h3>
+                      <p class="product-comp">Myo &amp; D-Chiro Inositol + Metformin + Mecobalamin + L-Methylfolate</p>
+                    </div>
+                    <a class="btn btn-primary btn-sm" href="product-atharva.html">View Details &rarr;</a>
+                  </div>
                 </article>
               </div>
+
+              <!-- Slide 4: Det-60K -->
               <div class="carousel-slide">
                 <article class="product-card">
-                  <span class="product-chip">Gynaecology</span>
-                  <h3><a href="product-destigest.html">Destigest</a></h3>
-                  <p class="product-comp">Dydrogesterone 10 mg Tablets</p>
-                  <a class="btn btn-ghost btn-sm" href="product-destigest.html">View Details</a>
+                  <div class="product-card-visual">
+                    <svg viewBox="0 0 80 80" fill="none">
+                      <rect x="22" y="28" width="36" height="24" rx="12" fill="#fff" stroke="#E0A82E" stroke-width="2"/>
+                      <circle cx="40" cy="40" r="4" fill="#E0A82E"/>
+                    </svg>
+                  </div>
+                  <div class="product-card-body">
+                    <div class="product-card-header">
+                      <span class="product-chip">Bone &amp; Joint</span>
+                      <h3><a href="product-det-60k.html">Det-60K</a></h3>
+                      <p class="product-comp">Vitamin D3 60,000 IU Softgel Capsules</p>
+                    </div>
+                    <a class="btn btn-primary btn-sm" href="product-det-60k.html">View Details &rarr;</a>
+                  </div>
                 </article>
               </div>
+
+              <!-- Slide 5: Shreyacit-P -->
               <div class="carousel-slide">
                 <article class="product-card">
-                  <span class="product-chip">Gynaecology</span>
-                  <h3><a href="product-ebate.html">Ebate</a></h3>
-                  <p class="product-comp">Ferrous Ascorbate 100 mg + Folic Acid 1.5 mg Tablets</p>
-                  <a class="btn btn-ghost btn-sm" href="product-ebate.html">View Details</a>
+                  <div class="product-card-visual">
+                    <svg viewBox="0 0 80 80" fill="none">
+                      <rect x="20" y="24" width="40" height="32" rx="6" fill="#fff" stroke="#1E5AA8" stroke-width="2"/>
+                      <path d="M30 40l10 8 10-16" stroke="#1E5AA8" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                  </div>
+                  <div class="product-card-body">
+                    <div class="product-card-header">
+                      <span class="product-chip">Neurology</span>
+                      <h3><a href="product-shreyacit-p.html">Shreyacit-P</a></h3>
+                      <p class="product-comp">Citicoline 500 mg + Piracetam 800 mg Tablets</p>
+                    </div>
+                    <a class="btn btn-primary btn-sm" href="product-shreyacit-p.html">View Details &rarr;</a>
+                  </div>
                 </article>
               </div>
+
+              <!-- Slide 6: Soryavit-PL -->
               <div class="carousel-slide">
                 <article class="product-card">
-                  <span class="product-chip">Gynaecology</span>
-                  <h3><a href="product-fitogin.html">FitoGin</a></h3>
-                  <p class="product-comp">L-Arginine with Proanthocyanidin + DHA Sachet (Sugar Free)</p>
-                  <a class="btn btn-ghost btn-sm" href="product-fitogin.html">View Details</a>
-                </article>
-              </div>
-              <div class="carousel-slide">
-                <article class="product-card">
-                  <span class="product-chip">Bone &amp; Joint</span>
-                  <h3><a href="product-det-60k.html">Det-60K</a></h3>
-                  <p class="product-comp">Vitamin D3 60,000 IU Softgel Capsules</p>
-                  <a class="btn btn-ghost btn-sm" href="product-det-60k.html">View Details</a>
-                </article>
-              </div>
-              <div class="carousel-slide">
-                <article class="product-card">
-                  <span class="product-chip">Bone &amp; Joint</span>
-                  <h3><a href="product-detcal-ct.html">Detcal-CT</a></h3>
-                  <p class="product-comp">Calcitriol + Calcium Carbonate + Vitamin B6 + Folic Acid Softgels</p>
-                  <a class="btn btn-ghost btn-sm" href="product-detcal-ct.html">View Details</a>
-                </article>
-              </div>
-              <div class="carousel-slide">
-                <article class="product-card">
-                  <span class="product-chip">Bone &amp; Joint</span>
-                  <h3><a href="product-detcal-max.html">Detcal-Max</a></h3>
-                  <p class="product-comp">Calcium Carbonate + Calcitriol + Omega-3 + Boron + Folic Acid + Methylcobalamin Softgels</p>
-                  <a class="btn btn-ghost btn-sm" href="product-detcal-max.html">View Details</a>
-                </article>
-              </div>
-              <div class="carousel-slide">
-                <article class="product-card">
-                  <span class="product-chip">Neurology</span>
-                  <h3><a href="product-shreyacit-p.html">Shreyacit-P</a></h3>
-                  <p class="product-comp">Citicoline 500 mg + Piracetam 800 mg Tablets</p>
-                  <a class="btn btn-ghost btn-sm" href="product-shreyacit-p.html">View Details</a>
-                </article>
-              </div>
-              <div class="carousel-slide">
-                <article class="product-card">
-                  <span class="product-chip">Neurology</span>
-                  <h3><a href="product-shreyacon.html">Shreyacon</a></h3>
-                  <p class="product-comp">L-Carnosine 200 mg Tablets</p>
-                  <a class="btn btn-ghost btn-sm" href="product-shreyacon.html">View Details</a>
-                </article>
-              </div>
-              <div class="carousel-slide">
-                <article class="product-card">
-                  <span class="product-chip">Neurology</span>
-                  <h3><a href="product-soryavit-2500.html">Soryavit-2500</a></h3>
-                  <p class="product-comp">Vitamin C + Methylcobalamin + Folic Acid + Nicotinamide Injection</p>
-                  <a class="btn btn-ghost btn-sm" href="product-soryavit-2500.html">View Details</a>
-                </article>
-              </div>
-              <div class="carousel-slide">
-                <article class="product-card">
-                  <span class="product-chip">Men's Health</span>
-                  <h3><a href="product-detflex.html">DetFlex</a></h3>
-                  <p class="product-comp">Co-Enzyme Q10 + L-Carnitine + L-Arginine + Astaxanthin + Lycopene + Flaxseed Oil + ALA Capsules</p>
-                  <a class="btn btn-ghost btn-sm" href="product-detflex.html">View Details</a>
-                </article>
-              </div>
-              <div class="carousel-slide">
-                <article class="product-card">
-                  <span class="product-chip">Gastro</span>
-                  <h3><a href="product-destipride.html">Destipride</a></h3>
-                  <p class="product-comp">Pantoprazole 40 mg + Levosulpiride 75 mg Tablets</p>
-                  <a class="btn btn-ghost btn-sm" href="product-destipride.html">View Details</a>
-                </article>
-              </div>
-              <div class="carousel-slide">
-                <article class="product-card">
-                  <span class="product-chip">Gastro</span>
-                  <h3><a href="product-detzyme.html">Detzyme</a></h3>
-                  <p class="product-comp">Fungal Diastase with Pepsin Syrup</p>
-                  <a class="btn btn-ghost btn-sm" href="product-detzyme.html">View Details</a>
-                </article>
-              </div>
-              <div class="carousel-slide">
-                <article class="product-card">
-                  <span class="product-chip">Anti-Infective</span>
-                  <h3><a href="product-i-tinyzle.html">I-TinyZle</a></h3>
-                  <p class="product-comp">Itraconazole 100 mg Capsules</p>
-                  <a class="btn btn-ghost btn-sm" href="product-i-tinyzle.html">View Details</a>
-                </article>
-              </div>
-              <div class="carousel-slide">
-                <article class="product-card">
-                  <span class="product-chip">Anti-Infective</span>
-                  <h3><a href="product-pod-cv.html">POD-CV</a></h3>
-                  <p class="product-comp">Amoxycillin 500 mg + Potassium Clavulanate 125 mg + Lactic Acid Bacillus Tablets</p>
-                  <a class="btn btn-ghost btn-sm" href="product-pod-cv.html">View Details</a>
-                </article>
-              </div>
-              <div class="carousel-slide">
-                <article class="product-card">
-                  <span class="product-chip">Steroidal</span>
-                  <h3><a href="product-detcort.html">Detcort</a></h3>
-                  <p class="product-comp">Deflazacort 6 mg / 30 mg Tablets</p>
-                  <a class="btn btn-ghost btn-sm" href="product-detcort.html">View Details</a>
-                </article>
-              </div>
-              <div class="carousel-slide">
-                <article class="product-card">
-                  <span class="product-chip">Nutrition</span>
-                  <h3><a href="product-soryavit-lc.html">Soryavit-LC</a></h3>
-                  <p class="product-comp">L-Lysine + Multivitamin &amp; Antioxidant Syrup (Sugar Free)</p>
-                  <a class="btn btn-ghost btn-sm" href="product-soryavit-lc.html">View Details</a>
-                </article>
-              </div>
-              <div class="carousel-slide">
-                <article class="product-card">
-                  <span class="product-chip">Nutrition</span>
-                  <h3><a href="product-soryavit-pl.html">Soryavit-PL</a></h3>
-                  <p class="product-comp">Protein Powder with Multivitamins &amp; Multiminerals (DHA &amp; L-Carnitine, Sugar Free)</p>
-                  <a class="btn btn-ghost btn-sm" href="product-soryavit-pl.html">View Details</a>
-                </article>
-              </div>
-              <div class="carousel-slide">
-                <article class="product-card">
-                  <span class="product-chip">Nutrition</span>
-                  <h3><a href="product-soryavit-xl.html">Soryavit-XL</a></h3>
-                  <p class="product-comp">Lycopene + Multivitamins &amp; Minerals + Methylcobalamin 1,500 mcg Softgels</p>
-                  <a class="btn btn-ghost btn-sm" href="product-soryavit-xl.html">View Details</a>
+                  <div class="product-card-visual">
+                    <svg viewBox="0 0 80 80" fill="none">
+                      <path d="M28 24h24v32a8 8 0 0 1-8 8H36a8 8 0 0 1-8-8V24z" fill="#fff" stroke="#1AA6A6" stroke-width="2"/>
+                      <line x1="24" y1="24" x2="56" y2="24" stroke="#1AA6A6" stroke-width="2.5" stroke-linecap="round"/>
+                    </svg>
+                  </div>
+                  <div class="product-card-body">
+                    <div class="product-card-header">
+                      <span class="product-chip">Nutrition</span>
+                      <h3><a href="product-soryavit-pl.html">Soryavit-PL</a></h3>
+                      <p class="product-comp">Protein Powder with Multivitamins &amp; Multiminerals (DHA &amp; L-Carnitine)</p>
+                    </div>
+                    <a class="btn btn-primary btn-sm" href="product-soryavit-pl.html">View Details &rarr;</a>
+                  </div>
                 </article>
               </div>
             </div>
           </div>
+
           <div class="carousel-nav">
             <button class="carousel-arrow" type="button" data-carousel-prev aria-label="Previous products">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -791,117 +924,144 @@
           </div>
         </div>
 
-        <div class="section-head center" style="margin:40px 0 0">
-          <a class="btn btn-primary" href="portfolio.html">View All 21 Products</a>
+        <div class="section-head center" style="margin:48px 0 0">
+          <a class="btn btn-primary" href="portfolio.html">View All 21 Products &rarr;</a>
         </div>
       </div>
     </section>
 
-    <!-- ================= FAQ ================= -->
+    <!-- ================= 10. FAQ (Wider 850px container, 64-72px Rows) ================= -->
     <section class="section" id="faq">
       <div class="container">
-        <div class="section-head center reveal">
-          <span class="eyebrow">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <div class="section-head center">
+          <span class="eyebrow reveal" data-reveal="eyebrow">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
               <path d="M2 12h4l2-5 3 10 2-7 2 4h7"/>
             </svg>
             FAQ
           </span>
-          <h2>Frequently asked questions</h2>
-          <p>Common questions about the portfolio, partnerships and getting in touch.</p>
+          <h2 class="reveal" data-reveal="heading">Frequently asked questions</h2>
+          <p class="reveal" data-reveal="description">Common questions about the portfolio, partnerships and getting in touch.</p>
         </div>
 
-        <div class="faq-list">
-          <details class="faq-item">
-            <summary class="faq-question">What products does Destiny Laboratories offer?
+        <div class="faq-list reveal" data-reveal="card-1">
+
+          <div class="faq-item">
+            <div class="faq-question">
+              What products does Destiny Laboratories offer?
               <span class="faq-icon" aria-hidden="true">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg>
               </span>
-            </summary>
+            </div>
             <div class="faq-answer">
               <p>21 pharmaceutical and nutraceutical formulations across 8 therapeutic areas — women's and maternal health, bone and joint care, neurology and cognition, men's health, gastroenterology, anti-infective therapy, steroidal and anti-inflammatory treatment, and nutrition and wellness.</p>
             </div>
-          </details>
-          <details class="faq-item">
-            <summary class="faq-question">Does Destiny Laboratories offer PCD franchise opportunities?
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              Does Destiny Laboratories offer PCD franchise opportunities?
               <span class="faq-icon" aria-hidden="true">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg>
               </span>
-            </summary>
-            <div class="faq-answer">
-              <p>Yes. Destiny Laboratories is opening PCD franchise and distribution partnership conversations across India. Territory and commercial terms are being finalised by the company.</p>
             </div>
-          </details>
-          <details class="faq-item">
-            <summary class="faq-question">How can I enquire about a product or partnership?
+            <div class="faq-answer">
+              <p>Yes. Destiny Laboratories provides PCD franchise and distribution partnership opportunities across India with territory rights and marketing support.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              How can I enquire about a product or partnership?
               <span class="faq-icon" aria-hidden="true">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg>
               </span>
-            </summary>
-            <div class="faq-answer">
-              <p>Write to us on WhatsApp at +91 93863 54555, email destinylaboratories195@gmail.com, or use the contact form on this website. Product pages also carry a request form.</p>
             </div>
-          </details>
-          <details class="faq-item">
-            <summary class="faq-question">What dosage forms does the portfolio cover?
+            <div class="faq-answer">
+              <p>You can connect directly on WhatsApp at +91 93863 54555, email destinylaboratories195@gmail.com, or use the contact form on this website.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              What dosage forms does the portfolio cover?
               <span class="faq-icon" aria-hidden="true">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg>
               </span>
-            </summary>
-            <div class="faq-answer">
-              <p>The portfolio spans tablets, softgel and hard capsules, syrups, sachets, injection and protein powder.</p>
             </div>
-          </details>
-          <details class="faq-item">
-            <summary class="faq-question">Where is Destiny Laboratories located?
+            <div class="faq-answer">
+              <p>The portfolio spans tablets, softgel and hard capsules, syrups, sachets, injections, and protein powders.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              Where is Destiny Laboratories located?
               <span class="faq-icon" aria-hidden="true">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg>
               </span>
-            </summary>
-            <div class="faq-answer">
-              <p>Destiny Laboratories Private Limited is registered at Khata No. 244, Khasra No. 91 &amp; 92, Central Hope Town, Vikas Nagar, Dehradun, Uttarakhand – 248197, India.</p>
             </div>
-          </details>
-          <details class="faq-item">
-            <summary class="faq-question">What certifications does Destiny Laboratories hold?
+            <div class="faq-answer">
+              <p>Destiny Laboratories Private Limited is registered at Khata No. 244, Khasra No. 91 &amp; 92, Central Hope Town, Vikas Nagar, Dehradun, Uttarakhand &ndash; 248197, India.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              What quality standards and documentation are maintained?
               <span class="faq-icon" aria-hidden="true">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg>
               </span>
-            </summary>
-            <div class="faq-answer">
-              <p>Certification details such as ISO, WHO-GMP or FSSAI will be displayed on this website only after the company confirms the standards it genuinely holds.</p>
             </div>
-          </details>
+            <div class="faq-answer">
+              <p>Every formulation is backed by complete composition transparency, certified manufacturing quality processes, and product technical specifications.</p>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
 
+
   </main>
 
-  <!-- ================= Closing CTA ================= -->
-  <section class="cta-band">
+  <!-- ================= 11. FINAL CTA (600px+ Immersive Ending) ================= -->
+  <section class="final-cta">
     <div class="container">
-      <div class="cta-band-inner reveal">
+      <div class="final-cta-inner reveal">
         <span class="eyebrow eyebrow-light">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
             <path d="M2 12h4l2-5 3 10 2-7 2 4h7"/>
           </svg>
-          Partnerships
+          Partner with Destiny
         </span>
-        <h2>Partner with Destiny Laboratories today</h2>
-        <p>
-          Whether you are starting a PCD franchise, expanding your existing portfolio or exploring
-          third-party manufacturing — our team will help you move forward with the right products
-          and support.
+        <h2>Let's explore opportunities to build better healthcare solutions together.</h2>
+        <p class="final-cta-sub">
+          Whether you are expanding your distribution network or seeking a reliable PCD franchise partner, our team is ready to discuss your goals and territory.
         </p>
-        <ol class="cta-steps">
-          <li>We contact you within 24 hours of your enquiry.</li>
-          <li>We understand your territory and therapeutic interest.</li>
-          <li>We share a curated product list, pricing and next steps.</li>
-        </ol>
-        <div class="cta-band-actions">
-          <a class="btn btn-cta" href="distribution.html">Become a Partner</a>
-          <a class="btn btn-outline-light" href="contact.html">Talk to the Team</a>
+        <div class="final-cta-btn-wrap">
+          <a class="btn btn-primary btn-lg" href="contact.html">Start a Conversation &rarr;</a>
+        </div>
+        <div class="final-cta-channels">
+          <a class="final-cta-link" href="https://wa.me/919386354555" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+            </svg>
+            WhatsApp (+91 93863 54555)
+          </a>
+          <a class="final-cta-link" href="tel:+919386354555">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.08 4.18 2 2 0 0 1 4.06 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/>
+            </svg>
+            Call Us
+          </a>
+          <a class="final-cta-link" href="mailto:destinylaboratories195@gmail.com">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="2" y="4" width="20" height="16" rx="2"/>
+              <path d="m22 7-10 6L2 7"/>
+            </svg>
+            Email Us
+          </a>
         </div>
       </div>
     </div>
@@ -911,7 +1071,7 @@
   <footer class="site-footer">
     <div class="container">
       <div class="footer-grid">
-        <div class="footer-brand">
+        <div class="footer-brand footer-col">
           <a class="brand" href="index.html">
             <img class="brand-logo" src="assets/img/destiny-logo.png" alt="Destiny Laboratories logo" width="40" height="40">
             <span class="brand-text">
@@ -927,7 +1087,6 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="quality.html">Quality</a></li>
             <li><a href="distribution.html">Partnerships</a></li>
             <li><a href="contact.html">Contact</a></li>
           </ul>
