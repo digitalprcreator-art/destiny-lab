@@ -57,9 +57,6 @@
   floatMenu.appendChild(
     makeLink("float-link float-call", "tel:+919386354555", ICONS.call, "Call Us")
   );
-  floatMenu.appendChild(
-    makeLink("float-link float-list", "portfolio.html", ICONS.download, "Download Product List")
-  );
 
   document.body.appendChild(floatMenu);
 

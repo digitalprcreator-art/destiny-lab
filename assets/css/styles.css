@@ -3944,6 +3944,13 @@ hr.animated-rule.is-visible {
   transition: transform 0.28s var(--ease-spring), width 0.28s var(--ease-spring);
   z-index: 0;
   pointer-events: none;
+  opacity: 0.8; /* Make it slightly transparent so text underneath is visible */
+}
+
+/* Make sure the pills are above the indicator */
+.sticky-filter-bar .sticky-filter-pill {
+  position: relative;
+  z-index: 1;
 }
 
 /* ── 11. FAQ ACCORDION ────────────────────────────────────── */
